@@ -2,7 +2,7 @@ function entrar()
 {
 	if(document.getElementById("ctr").value =="contrasena" && document.getElementById("email").value == "usuario@ejemplo.com")
 	{
-		window.location.href="inicio.html"
+		window.location.href="../pages/inicio.html"
 	}
 	else
 	{
