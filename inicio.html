@@ -1,0 +1,304 @@
+<!DOCTYPE html> 
+<html> 
+ <head>
+  <meta charset="utf-8"/> 
+   <meta name="description" content="Pagina principal de red social para organizaciones sin fines de lucro"/>
+ <meta name="keywords" content="redes, solidaridad, origanizaciones, social, donaciones"/>
+ <title> Principal </title> 
+
+  <link rel="stylesheet" href="css/estilos.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+
+ <body>
+  <div id="cuerpo">
+  <div class ="principal">
+
+
+<header>
+  <div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+         <span class="sr-only">Desplegar navegación</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="logoBarra" href="index.html">CrowdHelping</a>
+      </div>
+
+<!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+   <div class="collapse navbar-collapse navbar-ex1-collapse">
+   <ul class="nav navbar-nav">
+    <li class="active"><a href="#graficas">Graficas</a></li>
+      <li class="active"><a href="#eventos">Eventos</a></li> 
+   </ul>
+
+     <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#registra">Mi Perfil</a></li>
+      <li><a data-toggle="modal" data-target="#index.html">Salir</a></li>
+     </ul>
+  </nav>
+ </div>
+</header>
+
+
+     <section class="main row" id="graficas">
+
+         <div class="container-fluid">
+   <div id="seccion-acerca">
+     <h1>Graficas de <strong>CrowdHelping</strong></h1>
+   </div>
+   </div> 
+
+       <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+            
+             <div class="col-xs-12 col-sm-5">
+            <div id="registrados"></div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+            <div id="activos"></div>
+            </div>
+       </article>
+       <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+           <p> <h3>Información</h3>
+            - Información relevante
+           </p>   
+       </aside>
+     </section>
+
+<section calss="row" id="eventos">
+
+      <div class="container-fluid">
+   <div id="seccion-acerca">
+     <h1>Proyectos <strong>CrowdHelping</strong></h1>
+   </div>
+   </div> 
+
+<div class="container">
+
+
+<div class="col-md-4">
+<div class="btn">
+<img data-toggle="modal" data-target="#info1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRBo0RzxrwzKoBUjWBBJ5IjeBIXBivzrEm3pYXD0V8k65K4RwlA" alt="pro1" class=" figure-img img-fluid img-thumbnail img-responsive">
+<figcaption class="figure-caption">Proyectarte</figcaption>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="btn">
+<img data-toggle="modal" data-target="#info2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRBo0RzxrwzKoBUjWBBJ5IjeBIXBivzrEm3pYXD0V8k65K4RwlA" alt="pro2" Roses" class=" figure-img img-fluid img-thumbnail img-responsive">
+<figcaption class="figure-caption">Abuelitos</figcaption>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="btn">
+<img data-toggle="modal" data-target="#info3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRBo0RzxrwzKoBUjWBBJ5IjeBIXBivzrEm3pYXD0V8k65K4RwlA" alt="pro3" class=" figure-img img-fluid img-thumbnail img-responsive">
+<figcaption class="figure-caption">Niños Salud</figcaption>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+<!--modal-->
+
+<div id="info1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">INFO PROYECTO</h4>
+      </div>
+      <div class="modal-body">
+         <form>
+           <div class="form-group">
+           <div class="input-group"> <!--agrupa labels y form controls en la tag form-group para icono input-group-->
+             <h4>Descripción</h4>
+               <p>Enseñar actividades artisticas como baile, pintura y actuacion a niños y adolescentes.</p>
+           </div>
+           </div>
+
+          <div class="form-group">
+          <div class="input-group ">
+           
+              <table class="table">
+                                 <tr>
+    <th>Cant. Beneficiados</th>
+    <th>Meta de Recaudacion</th>
+    <th>Fecha fin R.</th>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>900.000</td>
+    <td>30-09-17</td>
+  </tr>
+ 
+             </table> 
+
+          </div>
+          </div>           
+           
+         
+          <button type="submit" class="btn btn-warning" onclick=" ">Donar</button>
+          <button type="submit" class="btn btn-info" onclick=" ">Compartir</button>
+         <button type="submit" class="btn btn-danger" onclick=" ">Me Gusta</button>
+        
+       </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div> 
+
+
+<!--modal-->
+
+<div id="info2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">INFO PROYECTO</h4>
+      </div>
+      <div class="modal-body">
+         <form>
+           <div class="form-group">
+           <div class="input-group"> <!--agrupa labels y form controls en la tag form-group para icono input-group-->
+             <h4>Descripción</h4>
+               <p>Compartir con los señores de tercera edad del acianato queridos abuelitos.</p>
+           </div>
+           </div>
+
+          <div class="form-group">
+          <div class="input-group ">
+           
+              <table class="table">
+                                 <tr>
+    <th>Cant. Beneficiados</th>
+    <th>Meta de Recaudacion</th>
+    <th>Fecha fin R.</th>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>900.000</td>
+    <td>30-09-17</td>
+  </tr>
+ 
+             </table> 
+
+          </div>
+          </div>           
+           
+         
+          <button type="submit" class="btn btn-warning" onclick=" ">Donar</button>
+          <button type="submit" class="btn btn-info" onclick=" ">Compartir</button>
+         <button type="submit" class="btn btn-danger" onclick=" ">Me Gusta</button>
+        
+       </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div> 
+
+
+<!--modal-->
+
+<div id="info3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">INFO PROYECTO</h4>
+      </div>
+      <div class="modal-body">
+         <form>
+           <div class="form-group">
+           <div class="input-group"> <!--agrupa labels y form controls en la tag form-group para icono input-group-->
+             <h4>Descripción</h4>
+               <p>Recaudacion de fondos para operaciones de niños que padecen de labio leporino.</p>
+           </div>
+           </div>
+
+          <div class="form-group">
+          <div class="input-group ">
+           
+              <table class="table">
+                                 <tr>
+    <th>Cant. Beneficiados</th>
+    <th>Meta de Recaudacion</th>
+    <th>Fecha fin R.</th>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>900.000.000</td>
+    <td>30-09-17</td>
+  </tr>
+ 
+             </table> 
+
+          </div>
+          </div>           
+           
+         
+          <button type="submit" class="btn btn-warning" onclick=" ">Donar</button>
+          <button type="submit" class="btn btn-info" onclick=" ">Compartir</button>
+         <button type="submit" class="btn btn-danger" onclick=" ">Me Gusta</button>
+        
+       </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div> 
+
+  <footer id="pie">
+    <small>2017&#8211;7  Derechos Reservados &copy; </small>
+    <small><a href="https://github.com/marnathali"> By Maria Nathali Anzola</a></small><br>
+  </footer>
+
+
+</div>
+</div>
+
+
+ <!--JS & JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="js/login.js"></script>
+  <script src="js/adicionales.js"></script>
+
+ <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/graficas.js"></script>
+</body>
+</html>
